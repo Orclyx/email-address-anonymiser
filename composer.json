@@ -2,7 +2,14 @@
     "name": "orclyx/email-address-anonymiser",
     "description": "Email address anonymiser",
     "type": "library",
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/Orclyx/AssertThrows"
+      }
+    ],
     "require-dev": {
+        "codeception/assert-throws": "dev-master",
         "phpunit/phpunit": "^9.3"
     },
     "license": "MIT",

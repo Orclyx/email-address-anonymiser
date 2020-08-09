@@ -13,7 +13,13 @@ class Anonymiser
 
     public function anonymise(string $email): string
     {
-        [$user, $domain] = explode('@', $email);
+        $atCount = substr_count($email, '@');
+
+        if ($atCount === 0 || $atCount > 1) {
+            throw new \InvalidArgumentException('Malformed email address.');
+        }
+
+        [$user, $domain] = array_map('trim', explode('@', $email));
 
         if (strlen($user) === 1) {
             // Copy the 1st character. Must have 0 or >2
