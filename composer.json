@@ -1,0 +1,23 @@
+{
+    "name": "orclyx/email-address-anonymiser",
+    "description": "Email address anonymiser",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^9.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ben Young",
+            "email": "ben-y@lightflows.co.uk"
+        }
+    ],
+    "require": {
+        "php": "^7.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "EmailAddressAnonymiser\\": "src/"
+        }
+    }
+}
