@@ -11,10 +11,10 @@ commonly used for personal email.
 $anonymiser = new EmailAddressAnonymiser\Anonymiser();
 
 // Becomes a***n@gmail.com
-$out = $this->anonymiser->anonymise('admin@gmail.com');
+$out = $anonymiser->anonymise('admin@gmail.com');
 
 // Becomes n***y@b***o
-$out = $this->anonymiser->anonymise('no-reply@benyoung.io');
+$out = $anonymiser->anonymise('no-reply@benyoung.io');
 ```
 
 ## CLI
